@@ -1,3 +1,9 @@
+/**
+ * NotFound Component
+ * Displays 404 error page for undefined routes
+ * Features: Error message, helpful navigation links, decorative elements
+ * Routes: Displayed for any undefined route in the application
+ */
 import { useNavigate } from 'react-router-dom'
 import styles from '../styles/NotFound.module.css'
 
