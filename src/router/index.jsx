@@ -1,3 +1,9 @@
+/**
+ * Router Configuration
+ * Implements dynamic routing with React Router v6
+ * Routes: Home, Product Detail, Cart, Checkout, 404 Not Found
+ * Features: Code splitting with lazy loading, error boundaries
+ */
 import { createBrowserRouter } from 'react-router-dom';
 import App from '../App';
 import NotFound from '../components/NotFound';
