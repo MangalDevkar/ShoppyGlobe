@@ -1,3 +1,9 @@
+/**
+ * Cart Redux Slice
+ * Manages shopping cart state and actions
+ * Actions: addToCart, removeFromCart, updateQuantity, clearCart
+ * Selectors: Cart items, total price, total quantity, item count
+ */
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
