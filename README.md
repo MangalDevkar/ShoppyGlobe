@@ -1,16 +1,82 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🎯 Key Features Explained
 
-Currently, two official plugins are available:
+### 1. Redux State Management
+- **Cart Slice:** Manages shopping cart items, quantities, and totals
+- **Products Slice:** Manages product list, filtering, and search
+- **Selectors:** Memoized selectors for efficient data access
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 2. Custom Hooks
+- **useFetchProducts:** Fetches products from API with error handling and loading states
 
-## React Compiler
+### 3. Routing
+- Home (ProductList)
+- Product Detail (dynamic route with ID parameter)
+- Shopping Cart
+- Checkout
+- 404 Not Found page
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 4. Components
+- **Header:** Navigation, search bar, cart icon with badge
+- **ProductList:** Grid display with lazy loading
+- **ProductItem:** Product card with add to cart
+- **ProductDetail:** Full product information with quantity selector
+- **Cart:** Items list with quantity controls
+- **CartItem:** Individual cart items with remove button
+- **Checkout:** Form for order placement
+- **NotFound:** 404 error page
 
-## Expanding the ESLint configuration
+### 5. Responsive Design
+- Mobile (320px)
+- Tablet (768px)
+- Desktop (1024px+)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📊 API Integration
+
+Uses **DummyJSON API** for product data:
+- `GET /products` - Fetch all products
+- `GET /products/:id` - Fetch single product
+- `GET /products/search?q=query` - Search products
+
+## ✨ Performance Optimizations
+
+- Code splitting with React.lazy
+- Lazy image loading with `loading="lazy"`
+- CSS Modules for scoped styling
+- Memoized selectors in Redux
+- Efficient re-rendering with proper prop types
+
+## 📝 Git Commits
+
+Project includes 25+ meaningful commits documenting the development process:
+1. Setup Vite project
+2. Redux store configuration
+3. Router setup
+4. Custom hooks
+5. Header component
+6. ProductList & ProductItem components
+7. ProductDetail component
+8. Cart & CartItem components
+9. Checkout & NotFound pages
+10. Bug fixes and CSS improvements
+... and more!
+
+## 🚀 Future Enhancements
+
+- Add user authentication
+- Implement payment gateway integration
+- Add product reviews and ratings
+- Wishlist functionality
+- Order history
+- Admin dashboard
+- Database integration
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+**Created by:** Mangal Devkar  
+**Date:** 2024  
+**Repository:** https://github.com/MangalDevkar/ShoppyGlobe
