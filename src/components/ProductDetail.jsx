@@ -1,3 +1,9 @@
+/**
+ * ProductDetail Component
+ * Displays comprehensive information about a single product
+ * Features: Product fetching, quantity selector, add to cart
+ * Route: Dynamic route with product ID parameter
+ */
 import { useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
