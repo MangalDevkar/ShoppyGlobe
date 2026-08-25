@@ -1,3 +1,9 @@
+/**
+ * Header Component
+ * Main navigation and search functionality
+ * Features: Logo, search bar, navigation links, cart badge
+ * Integrates: Redux for search state and cart count
+ */
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
