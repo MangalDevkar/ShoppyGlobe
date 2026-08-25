@@ -1,6 +1,7 @@
-import { Outlet, Suspense } from 'react-router-dom'
+import { Outlet } from "react-router-dom";
+import { Suspense } from "react";
 import Header from './components/Header'
-import './App.module.css'
+import styles from "./styles/App.module.css";
 
 /**
  * Main App Component
@@ -8,14 +9,14 @@ import './App.module.css'
  */
 function App() {
   return (
-    <div className="app-container">
+   <div className={styles.appContainer}>
       <Header />
-      <main className="main-content">
+      <main className={styles.mainContent}>
         <Suspense fallback={<div className="loading">Loading...</div>}>
           <Outlet />
         </Suspense>
       </main>
-      <footer className="footer">
+     <footer className={styles.footer}>
         <p>&copy; 2024 ShoppyGlobe. All rights reserved.</p>
       </footer>
     </div>
