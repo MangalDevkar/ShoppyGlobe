@@ -1,3 +1,10 @@
+/**
+ * App Component
+ * Main application root component
+ * Features: Header navigation, router outlet, suspense boundary
+ * Layout: Header, Main content area with lazy-loaded routes, Footer
+ */
+
 import { Outlet } from "react-router-dom";
 import { Suspense } from "react";
 import Header from './components/Header'
