@@ -1,0 +1,268 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.container h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+}
+
+/* Empty Cart */
+.emptyCart {
+  background: white;
+  border-radius: 8px;
+  padding: 4rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  grid-column: 1 / -1;
+}
+
+.emptyIcon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.emptyCart h2 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.emptyCart p {
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+/* Cart Items */
+.cartItems {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.itemsHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f5f7fa;
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.cartItems > div:not(.itemsHeader) {
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.cartItems > div:last-child {
+  border-bottom: none;
+}
+
+/* Cart Summary */
+.summary {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+.summary h2 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.summaryRow span:first-child {
+  font-weight: 600;
+}
+
+.summaryRow span:last-child {
+  text-align: right;
+}
+
+.free {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.divider {
+  height: 1px;
+  background-color: #ecf0f1;
+  margin: 1rem 0;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.checkoutBtn,
+.continueShopping {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.checkoutBtn {
+  background-color: #27ae60;
+  color: white;
+}
+
+.checkoutBtn:hover {
+  background-color: #229954;
+  transform: scale(1.02);
+}
+
+.continueShopping {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border: 1px solid #bdc3c7;
+}
+
+.continueShopping:hover {
+  background-color: #bdc3c7;
+  color: #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr 300px;
+    gap: 1.5rem;
+  }
+
+  .itemsHeader {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 0.8fr;
+    font-size: 0.85rem;
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .summary {
+    position: static;
+  }
+
+  .itemsHeader {
+    grid-template-columns: 1.5fr 1fr 0.8fr 1fr 0.6fr;
+    gap: 0.5rem;
+    padding: 0.75rem 0.5rem;
+  }
+
+  .emptyCart {
+    padding: 2rem 1rem;
+  }
+
+  .emptyIcon {
+    font-size: 3rem;
+  }
+
+  .emptyCart h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem 0.5rem;
+  }
+
+  .container h1 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    gap: 1rem;
+  }
+
+  .itemsHeader {
+    display: none;
+  }
+
+  .summary {
+    padding: 1rem;
+  }
+
+  .summary h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .summaryRow {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .totalRow {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .checkoutBtn,
+  .continueShopping {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .emptyCart {
+    padding: 1.5rem 1rem;
+  }
+
+  .emptyIcon {
+    font-size: 2.5rem;
+  }
+
+  .emptyCart h2 {
+    font-size: 1.2rem;
+  }
+}
