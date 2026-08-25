@@ -1,3 +1,9 @@
+/**
+ * CartItem Component
+ * Displays individual item in the shopping cart
+ * Features: Product image, quantity controls, price calculation
+ * Actions: Increase/decrease quantity, remove from cart
+ */
 import { useDispatch } from 'react-redux'
 import { removeFromCart, updateQuantity } from '../redux/slices/cartSlice'
 import styles from '../styles/CartItem.module.css'
