@@ -1,3 +1,9 @@
+/**
+ * ProductList Component
+ * Displays all products from the API
+ * Features: Search filtering, loading states, error handling
+ * Uses: useFetchProducts hook, Redux state
+ */
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import useFetchProducts from '../hooks/useFetchProducts'
