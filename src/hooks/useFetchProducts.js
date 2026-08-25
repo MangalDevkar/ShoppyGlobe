@@ -1,3 +1,9 @@
+/**
+ * useFetchProducts Custom Hook
+ * Fetches products from DummyJSON API
+ * Features: Loading state, error handling, automatic refetch
+ * Integrates: Redux dispatch for state management
+ */
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import axios from 'axios';
