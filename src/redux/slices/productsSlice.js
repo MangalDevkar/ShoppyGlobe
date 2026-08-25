@@ -1,3 +1,9 @@
+/**
+ * Products Redux Slice
+ * Manages products state, filtering, and search
+ * Actions: setLoading, setProducts, setError, searchProducts, clearSearch
+ * Selectors: All products, filtered products, search term, loading state
+ */
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
