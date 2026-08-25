@@ -1,3 +1,9 @@
+/**
+ * Checkout Component
+ * Handles order placement with form validation
+ * Features: Form validation, order summary, success message
+ * Actions: Collect user details, process order, clear cart, redirect
+ */
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
