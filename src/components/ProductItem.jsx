@@ -1,3 +1,9 @@
+/**
+ * ProductItem Component
+ * Displays individual product card in the product list
+ * Features: Product image, rating, price, discount badge
+ * Actions: Add to cart, navigate to product detail page
+ */
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../redux/slices/cartSlice'
